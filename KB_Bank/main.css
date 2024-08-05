@@ -1,0 +1,200 @@
+main{
+    width: 1000px;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+#mainBar{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    font-size: 18px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 20px 20px rgba(0,0,0,0.12);
+    margin-bottom: 50px;
+}
+#mainBar section{
+    display: flex;
+}
+#mainBar > #mainBar1 > p{
+    padding: 0 25px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #FECE0A;
+}
+#mainBar > #mainBar1 > p:last-child{
+    padding-right: 50px;
+}
+#mainBar > #mainBar2 > p{
+    background-color: #ffffff;
+    padding: 0 22px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+#mainBar > #mainBar2 > p:first-child{
+    padding-left: 29px;
+}
+
+
+
+#news{
+    display: flex;
+    width: 1000px;
+}
+#news > section > div > p{margin-top: 15px;}
+#news > section > div > p > a{color: #666666; font-size: 14px;}
+
+#news > section{
+    width: 500px;
+    height: 100px;
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsSelect > div{
+    color: #666666;
+    width: 350px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.eventSelect > div{
+    color: #666666;
+    width: 350px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.eventSelect > div > p:first-child{
+    width: 260px;
+}
+.event{
+    overflow: hidden;  		
+  text-overflow: ellipsis;  
+  white-space: nowrap; 	
+}
+
+
+
+#slideTwo{
+    width: 100%;
+    max-width: 1000px;
+    height: 235px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#slideTwo-wrap{
+    width: 2800px;
+    transition: 0.5s;
+}
+
+#slideTwo > section > div > li{
+    margin-right: 50px;
+    float: left;
+    width: 300px;
+    height: 230px;
+}
+#slideTwo > section > div > li > div:first-child{
+    height: 110px;
+}
+.slideBox1{background-color: #C3C9E6;}
+.slideBox2{background-color: #dcd3c8;}
+.slideBox3{background-color: #c3dee7;}
+.slideBox4{background-color: #e4cf9c;}
+.slideBox5{background-color: #C9D5A1;}
+.slideBox6{background-color: #C6D4E4;}
+.slideBox7{background-color: #8FDEEC;}
+#slideTwo > section > div > li > div:last-child{
+    border: 0.5px solid rgb(60, 60, 60);
+    border-top: none;
+    height: 120px;
+    
+}
+#slideTwo > section > div > li > div:last-child > h4{
+    padding: 5px 10px;
+}
+#slideTwo > section > div > li > div:last-child > p{
+    color: #666666;
+    font-size: 14px;
+    padding: 10px;
+}
+.display_none{
+    display: none;
+}
+#slideTwo-button{
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#slideTwo-button img{
+    cursor: pointer;
+    width: 10px;
+}
+
+
+
+#finance{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+#finance > section:first-child{
+    width: 160px;
+    padding-left: 20px;
+    height: 90px;
+}
+#finance > section:first-child > h2{
+    margin-bottom: 10px;
+}
+#financeList{
+    display: flex;
+    width: 840px;
+    justify-content: space-between;
+}
+#financeList img{
+    width: 60px;
+}
+#financeList p{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+#safety{
+    margin-top: 80px;
+    background-color: #F7F6F6;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 300px;
+}
+#safety img{
+    width: 1000px;
+    margin-left: 200px;
+}
+
+
+
+#app h2{
+    padding: 10px;
+}
+#apps{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#apps img{
+    width: 70px;
+}
