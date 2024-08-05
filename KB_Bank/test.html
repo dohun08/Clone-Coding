@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{list-style: none;}
+        #slideTwo{
+            width: 1000px;
+    height: 235px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+#slideTwo-wrap{
+    width: 3500px;
+    transition: 0.5s;
+}
+
+#slideTwo > section > div > li{
+    margin-right: 50px;
+    float: left;
+    width: 300px;
+    height: 230px;
+}
+#slideTwo > section > div > li > div:first-child{
+    height: 110px;
+}
+.slideBox1{background-color: #C3C9E6;}
+.slideBox2{background-color: #dcd3c8;}
+.slideBox3{background-color: #c3dee7;}
+.slideBox4{background-color: #e4cf9c;}
+.slideBox5{background-color: #C9D5A1;}
+.slideBox6{background-color: #C6D4E4;}
+.slideBox7{background-color: #8FDEEC;}
+#slideTwo > section > div > li > div:last-child{
+    border: 0.5px solid rgb(60, 60, 60);
+    border-top: none;
+    height: 120px;
+    
+}
+#slideTwo > section > div > li > div:last-child > h4{
+    padding: 5px 10px;
+}
+#slideTwo > section > div > li > div:last-child > p{
+    color: #666666;
+    font-size: 14px;
+    padding: 10px;
+}
+.display_none{
+    display: none;
+}
+#slideTwo-button{
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#slideTwo-button img{
+    cursor: pointer;
+    width: 10px;
+}
+    </style>
+</head>
+<body>
+    <article id="slideTwo">
+        <section id="slideTwo-wrap">
+            <div id="slideTwo-slider">
+                <li>
+                    <div class="slideBox1"></div>
+                    <div>
+                        <h4>케이봇쌤</h4>
+                        <p>
+                            로봇과 인간이 함께 추천하는<br>
+                            최적의 포트폴리오</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox2"></div>
+                    <div>
+                        <h4>KB Young Youth 적금</h4>
+                        <p>
+                            나와 내아이를 위한 상품<br>
+                        다양한 부가서비스까지 한가득</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox3"></div>
+                    <div>
+                        <h4>KB Star 정기예금</h4>
+                        <p>
+                            Digital KB의 대표 정기예금<br>
+                        알아서 자동재예치/자동해지</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox4"></div>
+                    <div>
+                        <h4>KB마이핏통장</h4>
+                        <p>
+                            높은 이율! 수수료 혜택!<br>
+                        목적별 자금관리를 통장 하나로!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox5"></div>
+                    <div>
+                        <h4>건강한 자산관리 KB마이데이터</h4>
+                        <p>
+                            각 기관에 흩어진 나의 자산을<br>
+                        한 곳에 모아서 관리해보세요.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox6"></div>
+                    <div>
+                        <h4> 이동통신서비스 Liiv M
+                        </h4>
+                        <p>
+                            KB국민은행의 혁신금융서비스로<br>
+                    금융권 최초로 제공하는 이동통신서비스</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox7"></div>
+                    <div>
+                        <h4>KB환전서비스</h4>
+                        <p>
+                            최대 90%까지 환율우대 받고<br>
+                        인터넷으로 편하게 환전 하세요</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox1"></div>
+                    <div>
+                        <h4>케이봇쌤</h4>
+                        <p>
+                            로봇과 인간이 함께 추천하는<br>
+                            최적의 포트폴리오</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox2"></div>
+                    <div>
+                        <h4>케이봇쌤</h4>
+                        <p>
+                            로봇과 인간이 함께 추천하는<br>
+                            최적의 포트폴리오</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="slideBox3"></div>
+                    <div>
+                        <h4>케이봇쌤</h4>
+                        <p>
+                            로봇과 인간이 함께 추천하는<br>
+                            최적의 포트폴리오</p>
+                    </div>
+                </li>
+            </div>
+        </section>
+    </article>
+    
+    <script src="slideTwo.js"></script>
+</body>
+</html>
