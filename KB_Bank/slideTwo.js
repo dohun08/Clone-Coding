@@ -11,8 +11,26 @@ const sliderWidth = 2800;
 let currentIdx = 0; // 슬라이드 현재 번호
 let translate = 0; // 슬라이드 위치 값
 
-window.onload = setInterval(()=> {slideTwos()}, 1000);
-
+const stop2 = document.getElementById("stop2");
+var n=1;
+if(n){
+    n--;
+    var start2 = setInterval(()=> {slideTwos()}, 5000);
+}
+var j=1;
+function start_play2(){
+    if(j){
+        clearInterval(start2);
+        j=0;
+        stop2.src = "img/play.png";
+        
+    }
+    else{
+        start2 = setInterval(()=> {slideTwos()}, 5000);
+        j=1;
+        stop2.src = "img/stop2.png";
+    }
+}
 function slideTwos(){
     if(currentIdx == 7){
         currentIdx = 0;
@@ -36,12 +54,13 @@ function slideTwos(){
 //클릭하여 조절하기
 function left(){
     if(currentIdx-1 == -1){
-        currentIdx = 7;
-        slideTwoSlider.style.transition = "0.5";
+        currentIdx = 6;
+        translate = -2100
+        slideTwoSlider.style.transition = "0.5s";
         slideTwoSlider.style.transform = `translateX(-2100px)`;
     }
     else {
-        translate = liWidth;
+        translate += liWidth;
         slideTwoSlider.style.transition = "0.5s";
         slideTwoSlider.style.transform = `translateX(${translate}px)`;
         currentIdx-=1;
