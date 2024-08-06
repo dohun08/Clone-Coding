@@ -1,0 +1,32 @@
+header > nav{
+    position: fixed;
+    top: 60px;
+    left: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    width: 800px;
+}
+nav > article >img:first-child{
+    width: 180px;
+}
+#icon{
+    width: 180px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#icon > img{
+    width: 30px;
+}
+.download{
+    display: none;
+}
+#scroll{
+    position: fixed;
+    bottom: 0;
+    left: 700px;
+    width: 80px;
+    margin-bottom: 20px;
+}

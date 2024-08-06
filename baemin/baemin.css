@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+@keyframes zoom {
+    from{
+        background-size: 150%;
+    }
+    to{
+        background-size: 100%;
+    }
+}
+#mainBg{
+    width: 1440px;
+    height: 810px;
+    background-image: url(img/bg-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zoom 1s;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+#rider-button-pc{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+}
+#qrcode{
+
+}
