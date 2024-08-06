@@ -12,11 +12,7 @@ let currentIdx = 0; // 슬라이드 현재 번호
 let translate = 0; // 슬라이드 위치 값
 
 const stop2 = document.getElementById("stop2");
-var n=1;
-if(n){
-    n--;
-    var start2 = setInterval(()=> {slideTwos()}, 5000);
-}
+var start2 = setInterval(()=> {slideTwos()}, 5000);
 var j=1;
 function start_play2(){
     if(j){
