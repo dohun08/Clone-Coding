@@ -1,6 +1,42 @@
+main{
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
 main > article{
     background-color: rgb(43 193 188);
-    width: 1440px;
-    height: 810px;
-    border: 1px solid black;
+    height: 100vh;
+    width: 100vw;
+    border-top: 1px solid black;
+}
+main > article > section{
+    width: 900px;
+    margin: 150px auto;
+    color: white;
+}
+main > article > section > img{
+    width: 600px;
+    margin-bottom: 20px;
+}
+@keyframes bmhi {
+    from{
+        left: 700px;
+        opacity: 0;
+    }
+    to{
+        left: 350px;
+        opacity: 1;
+    }
+}
+.bmHi{
+    animation: bmhi 1s;
+}
+.animation{
+    display: none;
+    position: relative;
+    bottom: 400px;
+    left: 350px;
 }

@@ -1,3 +1,14 @@
+.headerhi{
+    animation: oHi 0.5s;
+}
+.headerBy{
+    animation: buttonBy 0.5s;
+}
+header{
+    display: block;
+    position: fixed;
+    z-index: 10;
+}
 header > nav{
     position: fixed;
     top: 60px;
@@ -6,10 +17,10 @@ header > nav{
     justify-content: space-between;
 }
 nav{
-    width: 800px;
+    width: 750px;
 }
 nav > article >img:first-child{
-    width: 180px;
+    width: 170px;
 }
 #icon{
     width: 180px;
@@ -17,16 +28,64 @@ nav > article >img:first-child{
     display: flex;
     justify-content: space-between;
 }
+#appDownload{
+    display: none;
+    width: 150px;
+}
 #icon > img{
     width: 30px;
 }
-.download{
-    display: none;
-}
+
 #scroll{
     position: fixed;
     bottom: 0;
     left: 700px;
     width: 80px;
     margin-bottom: 20px;
+}
+
+@keyframes buttonBy {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+.buttonby{
+    animation: buttonBy 0.8s;
+}
+#rider-button-pc{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    z-index: 12;
+}
+@keyframes oHi {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.ohi{
+    animation: oHi 0.8s;
+}
+#o{
+    display: none;
+    flex-direction: column;
+    height: 260px;
+    width: 26px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 10%;
+    bottom: 180px;
+}
+#o > img{
+    cursor: pointer;
+    width: 12px;
 }
