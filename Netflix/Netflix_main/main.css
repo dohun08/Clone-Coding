@@ -1,0 +1,205 @@
+body{background-color: black;}
+
+#email a{text-decoration-line: none; color: white;}
+select{
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+#container{
+    padding: 0;
+    margin: 0px auto;
+    width: 1450px;
+    height: 4150px;
+}
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(KR-ko-20240429-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-in{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.login{
+    width: 7%;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0px 15px;
+}
+.login:hover{background-color: rgb(184, 0, 0); transition: 0.8s;}
+.logo{width: 17%;}
+.start{
+    width: 15%;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.start:hover{background-color: rgb(184, 0, 0); transition: 0.8s;}
+#input{
+    width: 40%;
+    height: 50px;
+    margin: 0px 15px;
+}
+.input{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+#middle{
+    max-width: 75%;
+    margin: 0px auto; 
+    position: relative;
+}
+#email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.event{
+    color: white;
+    width: 100%;
+    height: 150px;
+    background: radial-gradient(red, violet, blue);
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main{
+    width: 100%;
+    height: 90%;
+}
+.text1{
+    font-size: 50px;
+    color: white;
+}
+.text2{
+    font-size: 23px;
+    color: white;
+}
+.bar{
+    height: 10px;
+    background-color: rgb(80, 80, 80, 0.5);
+    border: none;
+    margin: 70px 0px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.question22{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+    position: relative;
+}
+.question33{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+}
+.question44{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+}
+.question55{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+}
+.question66{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+}
+.question77{
+    font-size: 23px;
+    color: white;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    padding-right: 100px;
+}
+.question22:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+.question33:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+.question44:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+.question55:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+.question66:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+.question77:hover{
+    background-color: rgba(144, 144, 144, 0.5);
+    transition: 0.3s;
+}
+
+footer{
+    max-width: 75%;
+    margin: 0px auto;
+}
+li{
+    list-style: none;
+    line-height: 35px;
+}
+footer a{color: rgb(182, 182, 182);}
+#question{
+    color: white;
+}
+#middle #question div{
+    color: white;
+    font-size: 23.5px;
+    background-color: rgb(80, 80, 80, 0.5);
+    padding: 25px;
+    display: none;
+}
