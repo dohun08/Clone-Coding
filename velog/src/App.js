@@ -3,7 +3,25 @@ import logoSrc from './assets/logo.png'
 import alamSrc from './assets/alarm.svg'
 import searchSrc from './assets/search.svg'
 import BottomSrc from './assets/BottomArrow.svg'
+import TrandingSrc from './assets/tranding.svg'
+import NewSrc from './assets/Clock.svg'
+import Peed from './assets/wifi.svg'
+import ThreeCicleSrc from './assets/threeCircle.svg'
+import TrandingSrcG from './assets/trandingG.svg'
+import NewSrcG from './assets/ClockG.svg'
+import PeedG from './assets/wifiG.svg'
+import {useState} from "react"
 function App() {
+    const [activeIndex, setActiveIndex] = useState(0);
+    
+    const handleTrandingClick = (index) => {
+        setActiveIndex(index);
+    };
+    const trandingItems = [
+        { src: TrandingSrc, src2:TrandingSrcG, label: '트렌딩' },
+        { src: NewSrc, src2:NewSrcG, label: '최신' },
+        { src: Peed, src2:PeedG, label: '피드' }
+    ];
   return (
       <Body>
           <GlobalStyle />
@@ -27,7 +45,34 @@ function App() {
 
                   </Info>
               </Header>
+            <Main>
+                 <MainBar>
+                        <Nav float = {false}>
+                            {trandingItems.map((item, index) => (
+                                <Tranding 
+                                    key={index} 
+                                    borderBottom={activeIndex === index} 
+                                    onClick={() => handleTrandingClick(index)}
+                                >
+                                    <img src={activeIndex===index ? item.src : item.src2} alt={item.label} />
+                                    <p>{item.label}</p>
+                                </Tranding>
+                            ))}
+                        </Nav>
+                        <Nav float = {true}>
 
+                            <ThreeCicle>
+                                <img src={ThreeCicleSrc} alt="점세개" />
+                            </ThreeCicle>
+                        </Nav>
+                 </MainBar>
+                {/*    
+                    
+                
+                <MainSection>
+
+                </MainSection> */}
+            </Main>
           </Container>
       </Body>
 
@@ -35,7 +80,54 @@ function App() {
 }
 
 export default App;
+const ThreeCicle = styled.div`
+    width: 10%;
+    display: flex;
+    & > img{
+        width: 15%;
+        cursor: pointer;
+    }
+`
+const Tranding = styled.div`
+    width: 33%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: ${(props) => (props.borderBottom ? "2px solid black" : "2px solid transparent")}; 
+    justify-content: center;
+    transition: border-bottom 0.3s ease; 
 
+    & > p {
+        color: ${(props) => (props.borderBottom ? "black" : "gray")};
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        transition: color 0.3s ease; 
+        cursor: pointer;
+    }
+    
+    & > img {
+        cursor: pointer;
+    }
+`;
+
+const Main = styled.main`
+    width:100%;
+    margin-top: 40px;
+`
+const Nav = styled.nav`
+    width: 25%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: ${(props) =>(props.float ? "end" : "space-between")};
+`
+const MainBar = styled.div`
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+`
 const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
