@@ -1,0 +1,427 @@
+#container{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+footer{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    bottom: -2450px;
+    background-color: rgb(189, 189, 189);
+}
+header{
+    max-width: 90%;
+    height: 50%;
+    margin: 0px auto;
+    margin-top: 15px;
+}
+#nav1{
+    position: relative;
+    display: flex;
+}
+#nav1 .nav1{position: absolute; right: 0px;}
+
+.input{
+    border-radius: 50px;
+    width: 700px;
+    border: 1px solid rgb(2, 209, 19);
+    padding: 10px;
+    height: 40px;
+    position: relative;
+}
+#input{
+    display: flex;
+    align-items: center;
+}
+.in{
+    position: absolute;
+    right: 60px;
+}
+.top-img{
+    margin: 0px auto;
+    max-width: 700px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.top-img img{
+    width: 15%;
+    height: 60px;
+    margin: 0px 6px;
+}
+main{
+    margin: 0px auto;
+    width: 90%;
+    position: relative;
+}
+#section1{
+    position: absolute;
+    left: 0px;
+    width: 65%;
+}
+
+#section1 article{
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#section2{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 32%;
+}
+#news{
+    max-width: 100%;
+}
+.main-news{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+.main-news p{margin-right: 10px;}
+.main-news2{
+    width: 95%;
+    background-color: rgb(232, 232, 232);
+    margin: 0px auto;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.main-news2-left{
+    display: flex;
+    justify-content: start;
+}
+#main-news3{
+    position: relative;
+    margin-top: 50px;
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#main-news3 div{
+    width: 124px;
+    height: 40px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-news4{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: center;
+}
+#main-news5{
+    width: 95%;
+    opacity: 0;
+    position: absolute;
+    top: 16.5%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#main-news5:hover{
+    opacity: 1;
+}
+#main-news5 div{
+    background-color: rgb(0, 132, 255);
+    width: 124px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+#main-news5 div a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 14px;
+}
+#main-news5 div a:hover{
+    text-decoration-line: underline;
+}
+.main-news2-left p{padding: 0px 10px;}
+.main-news2-right{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    background-color: red;
+}
+.loginbox{
+    width: 100%;
+}
+.login{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(2, 209, 19);
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#id{
+    font-size: 14px;
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.id{color: black; text-decoration-line: none;}
+.id:hover{text-decoration: underline;}
+.pw{color: black; text-decoration-line: none;}
+.pw:hover{text-decoration: underline;}
+.join{color: black; text-decoration-line: none;}
+.join:hover{text-decoration: underline;}
+#section2 article{
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#weather{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin: 0px auto;
+    position: relative;
+}
+.weather1{
+    position: absolute;
+    left: 0px;
+}
+.weather2{
+    position: absolute;
+    right: 0px;
+}
+.wale{
+    display: flex;
+    justify-content: row;
+    width: 95%;
+    margin: 0px auto;
+}
+#we{
+    width: 100%;
+    height: 700px;
+}
+#wejetboard{
+    padding-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+}
+#wejetboard div{
+    border: 1px solid rgba(0, 0, 0, 0.214);
+    border-radius: 5px;
+}
+.wb1{
+    width: 47%;
+    position: absolute;
+    left: 0px;
+    height: 180px;
+    top: 50px;
+    background-color: white;
+}
+#wb1{
+    padding-top: 10px;
+    width: 90%;
+    margin: 0px auto;
+    background-color: white;
+}
+.wb2{
+    width: 47%;
+    position: absolute;
+    right: 0px;
+    height: 180px;
+    top: 50px;
+    background-color: white;
+}
+.memo{
+    color: white;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.wb3-button{
+    font-size: 14px; 
+    width: 70%;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 140, 255);
+}
+.wb3-button:hover{
+    background-color: rgb(0, 101, 184);
+}
+.wb3-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wb3{
+    width: 47%;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    height: 180px;
+    background-color: white;
+}
+.wb4{
+    width: 47%;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+    height: 180px;
+    background-color: white;
+}
+.wb4 span{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    width: 300px;
+}
+.wb5{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    height: 200px;
+    background-color: white;
+}
+.wb6{
+    position: absolute;
+    bottom: 35px;
+    left: 0px;
+    width: 100%;
+}
+.shoping{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+#shopingmall{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: rgb(220, 218, 218);
+    justify-content: space-around;
+    max-width: 30%;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+#shopingmall span{
+    width: 60px;
+}
+.gt{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+#gt{
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#main-shoping{
+    width: 95%;
+    margin: 0px auto;
+    position: relative;
+}
+#mall{
+    width: 65%;
+    top: 20px;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#mall div{margin-right: 10px; margin-bottom: 20px;}
+#mall div a{text-decoration-line: none; color: black;}
+#mall div a:hover{text-decoration-line: underline;}
+#footer{
+    width: 90%;
+    margin: 0px auto;
+}
+#footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer1-bar1{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+a{text-decoration-line: none;}
+a:hover{text-decoration-line: underline;}
+#gg{position: relative;}
+#gg1{position: absolute; left: 0px;}
+#gg2{position: absolute; right: 0px;}
+#footer2{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+#footer2-bar3{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+#footer2-bar4{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+#footer2-bar1{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    width: 700px;
+}
+#footer2-bar2{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    width: 500px;
+    justify-content: space-around;
+}
+#footer2-bar1 a{color: black;}
+#footer2-bar2 a{color: black;}
+#footer3{width: 60%; margin: 0px auto; position: absolute; bottom: 25px; left: 20%;}
+#footer3-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#footer3-bar a p{color: black;}
