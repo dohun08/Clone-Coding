@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한 페이지씩 스크롤</title>
+    <style>
+        /* 기본 설정 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        /* header 스타일 */
+        header {
+            background-color: #f7f7f7;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* main 스타일 */
+        main {
+            height: 100vh;
+            overflow: hidden;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .page {
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: white;
+        }
+
+        #page1 {
+            background-color: #3498db; /* 파란색 */
+        }
+
+        #page2 {
+            background-color: #e74c3c; /* 빨간색 */
+        }
+
+        #page3 {
+            background-color: #2ecc71; /* 초록색 */
+        }
+
+        #page4 {
+            background-color: #f39c12; /* 노란색 */
+        }
+
+        /* footer 스타일 */
+        footer {
+            background-color: #f7f7f7;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>배달의 민족</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">음식점</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="page" id="page1">첫 번째 페이지</section>
+        <section class="page" id="page2">두 번째 페이지</section>
+        <section class="page" id="page3">세 번째 페이지</section>
+        <section class="page" id="page4">네 번째 페이지</section>
+        <!-- 추가 페이지는 여기 추가 -->
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 배달의 민족</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const main = document.getElementById('main');
+            const pages = document.querySelectorAll('.page');
+            let currentPage = 0;
+            let isScrolling = false;
+            const scrollDelay = 1000; // 스크롤 딜레이 (밀리초)
+
+            function scrollToPage(pageIndex) {
+                if (pageIndex >= 0 && pageIndex < pages.length) {
+                    main.scrollTo({
+                        top: pages[pageIndex].offsetTop,
+                        behavior: 'smooth'
+                    });
+                    currentPage = pageIndex;
+                }
+            }
+
+            window.addEventListener('wheel', function(event) {
+                if (isScrolling) return;
+
+                if (event.deltaY > 0) {
+                    // Scroll down
+                    if (currentPage < pages.length - 1) {
+                        isScrolling = true;
+                        scrollToPage(currentPage + 1);
+                        setTimeout(() => isScrolling = false, scrollDelay);
+                    }
+                } else if (event.deltaY < 0) {
+                    // Scroll up
+                    if (currentPage > 0) {
+                        isScrolling = true;
+                        scrollToPage(currentPage - 1);
+                        setTimeout(() => isScrolling = false, scrollDelay);
+                    }
+                }
+            }, { passive: false });
+        });
+    </script>
+</body>
+</html>

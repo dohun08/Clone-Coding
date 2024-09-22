@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+@keyframes zoom {
+    from{
+        background-size: 150%;
+    }
+    to{
+        background-size: 100%;
+    }
+}
+#mainBg{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/bg-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zoom 1s;
+    border: 1px solid black;
+    opacity: 0.9;
+    position: relative;
+}
+
+#mainBg > article{
+    width: 900px;
+    margin: 0 auto;
+}
+#download{
+    display: flex;
+    width: 860px;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.main_text_01{
+    margin-top: 160px;
+    width: 500px;
+}
+.download{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.download > p{
+    background-color: white;
+    padding: 30px 60px;
+    color: black;
+    border-radius: 40px;
+}
+#qrcode{
+    position: absolute;
+    right: 270px;
+    bottom: 100px;
+}
+.qr{
+    width: 150px;
+}

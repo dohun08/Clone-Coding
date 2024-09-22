@@ -1,0 +1,10 @@
+footer{
+    width: 100vh;
+    height: 100vh;
+}
+footer > img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1400px;
+}
