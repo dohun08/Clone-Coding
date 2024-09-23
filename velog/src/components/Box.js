@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import {useState} from "react"
+import Src from '/img/img1.png'
 function Box(props){
     const [hovered, setHovered] = useState(false);
     return(
