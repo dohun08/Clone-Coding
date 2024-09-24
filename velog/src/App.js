@@ -99,6 +99,7 @@ function App() {
                         description={item.description}
                         date={item.date}
                         name={item.user_name}
+                        like={item.like}
                     />
                     )) :null}
                     {undata.map((_, index) => (
