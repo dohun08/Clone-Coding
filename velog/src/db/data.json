@@ -12,35 +12,8 @@
             "title":"hello",
             "img_file" : "/img/img1.png", 
             "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01"
-        },
-        {
-            "user_name":"dehgns12",
-            "title":"hello",
-            "img_file" : "/img/img1.png", 
-            "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01"
-        },
-        {
-            "user_name":"dehgns12",
-            "title":"hello",
-            "img_file" : "/img/img1.png", 
-            "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01"
-        },
-        {
-            "user_name":"dehgns12",
-            "title":"hello",
-            "img_file" : "/img/img1.png", 
-            "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01"
-        },
-        {
-            "user_name":"dehgns12",
-            "title":"hello",
-            "img_file" : "/img/img1.png", 
-            "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01"
+            "date":"2020-01-01",
+            "like":0
         }
     ]
 }
