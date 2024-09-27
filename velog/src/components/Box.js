@@ -5,12 +5,11 @@ function Box(props){
     const [hovered, setHovered] = useState(false);
     return(
         <Boxs 
-            key={props.key}
             hovered={hovered} 
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             >
-   
+
                 <ImgBox src={props.img} alt="title이미지" />
                 <Content>
                     <Main>

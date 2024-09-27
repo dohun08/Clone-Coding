@@ -11,6 +11,12 @@ import TrandingSrcG from './assets/trandingG.svg'
 import NewSrcG from './assets/ClockG.svg'
 import PeedG from './assets/wifiG.svg'
 import Box from './components/Box'
+import {BrowserRouter as Router,
+    Routes,
+    Route,
+    Link,
+
+} from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 function App() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -58,9 +64,12 @@ function App() {
                       <Alarm href={"https://velog.io/search"}>
                           <IconImg src={searchSrc} alt={"search"} />
                       </Alarm>
-                      <NewText>
-                            새 글 작성
-                      </NewText>
+                      <Link to={"/write"}>
+                        <NewText>
+                                새 글 작성
+                        </NewText>
+                      </Link>
+                     
                       <ProfillBox>
                           <Profill />
                           <BottomArrow src={BottomSrc} alt={"아래 화살표"} />
@@ -89,7 +98,6 @@ function App() {
                         </Nav>
                  </MainBar>
             <Main>
-            <Main>
                 <MainSection>
                     {undata.length >0 ?  data.map((item) => (
                     <Box 
@@ -107,7 +115,6 @@ function App() {
                     ))}
                 </MainSection>
                 </Main>
-            </Main>
           </Container>
       </Body>
 
@@ -176,7 +183,7 @@ const MainBar = styled.div`
     display:flex;
     flex-flow:row nowrap;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 35px 0;
 `
 const GlobalStyle = createGlobalStyle`
     *{
@@ -235,7 +242,7 @@ const IconImg = styled.img `
     width: 100%;
 `
 const NewText = styled.div`
-    width: 35%;
+    padding: 7px 20px;
     border-radius: 30px;
     cursor: pointer;
     background-color: #F8F9FA;
