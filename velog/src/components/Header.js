@@ -3,47 +3,47 @@ import alamSrc from '../assets/alarm.svg'
 import searchSrc from '../assets/search.svg'
 import BottomSrc from '../assets/BottomArrow.svg'
 import styled from "styled-components";
-
+import {Link} from 'react-router-dom'
 function Headers(){
     return(
-            <Header>
-                  <Logo src={logoSrc} alt={"logo"}/>
-                  <Info>
-                    <Alarm href={"https://velog.io/notifications"}>
-                        <IconImg src={alamSrc} alt={"alam"} />
-                    </Alarm>
-                      <Alarm href={"https://velog.io/search"}>
-                          <IconImg src={searchSrc} alt={"search"} />
-                      </Alarm>
-                      <NewText>
-                            새 글 작성
-                      </NewText>
-                      <ProfillBox>
-                          <Profill />
-                          <BottomArrow src={BottomSrc} alt={"아래 화살표"} />
-                      </ProfillBox>
+        <Header>
+        <Logo src={logoSrc} alt={"logo"}/>
+        <Info>
+          <Alarm href={"https://velog.io/notifications"}>
+              <IconImg src={alamSrc} alt={"alam"} />
+          </Alarm>
+            <Alarm href={"https://velog.io/search"}>
+                <IconImg src={searchSrc} alt={"search"} />
+            </Alarm>
+            <Link to={"/write"}>
+              <NewText>
+                      새 글 작성
+              </NewText>
+            </Link>
+           
+            <ProfillBox>
+                <Profill />
+                <BottomArrow src={BottomSrc} alt={"아래 화살표"} />
+            </ProfillBox>
 
-                  </Info>
-              </Header>
+        </Info>
+    </Header>
     )
              
 
 }
 export default Headers;
 
-
 const Header = styled.header`
-background-color: #F8F9FA;
     width: 100%;
     max-width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding-top: 20px;
+    background-color: #F8F9FA;
 `
 const Logo = styled.img`
-    width: 80px;
-    height: 35px;
+    width: 10%;
 `
 const Info = styled.div`
     width: 28%;
@@ -68,7 +68,7 @@ const IconImg = styled.img `
     width: 100%;
 `
 const NewText = styled.div`
-    width: 35%;
+    padding: 7px 20px;
     border-radius: 30px;
     cursor: pointer;
     background-color: #F8F9FA;

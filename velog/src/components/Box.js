@@ -3,8 +3,14 @@ import {useState} from "react"
 import likeSrc from '../assets/heart.svg'
 function Box(props){
     const [hovered, setHovered] = useState(false);
+    const goTopage = (key)=>{
+        const url = `/box/${key}`
+        window.location.href = url;
+    }
     return(
-        <Boxs 
+        <Boxs
+            key={props.k}
+            onClick={()=>goTopage(props.k)}    
             hovered={hovered} 
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -30,8 +36,8 @@ function Box(props){
 }
 export default Box;
 const User = styled.div`
+    padding: 10px;
     border-top: 1px solid black;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
 `
@@ -41,12 +47,15 @@ const Date = styled.p`
     color: gray;
 `
 const Main = styled.div`
-    padding-bottom:60px;
+    padding-bottom:5px;
     &>h3{
         padding-bottom:10px;
     }
 `
 const Des = styled.p`
+text-overflow: ellipsis;
+    overflow: hidden;        
+    height: 80px;
     color: gray;
     font-size: 14px;
 `

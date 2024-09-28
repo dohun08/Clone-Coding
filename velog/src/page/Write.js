@@ -9,6 +9,11 @@ function Write(){
     const Month = days.getMonth()
     const date = days.getDate()
     console.log(year)
+    const checkData = ()=>{
+        if(title === "") alert("제목이 비어있습니다.")
+        else if(content ==="") alert("내용이 비어있습니다.")
+        else Create()
+    }
     const Create = async ()=>{
         try{
             const response = await fetch('http://localhost:3001/box', {
@@ -51,7 +56,7 @@ function Write(){
                 <S.content placeholder="당신의 이야기를 적어보세요..." type="text" value={content} onChange={(e) =>setContent(e.target.value)} />
                 <S.footer>
                 <a  href="/"><S.exit><img src = {LeftSvg} />나가기</S.exit></a>
-                    <button type="butto" onClick={Create}>제출</button>
+                <a href="/"><S.submit type="button" onClick={checkData}>출간하기</S.submit></a>
                 </S.footer>
                 
             </S.form>

@@ -22,6 +22,9 @@ export const GlobalStyle = createGlobalStyle`
         color: black;
         text-decoration-line:none;
     }
+    textarea {
+  resize: none;
+}
 `
 export const container = styled.div`
     width: 100%;
@@ -57,8 +60,12 @@ export const buttonBox = styled.div`
     justify-content: space-around;
     
 `
-export const content = styled.input`
+export const content = styled.textarea`
     font-size: 18px;
+    border: none;
+        padding: 20px 40px;
+        outline: none;
+    height: 500px;
     &::placeholder{
         font-style: italic;
     }
@@ -87,3 +94,15 @@ export const exit = styled.div`
         width:25px;
     }
 `
+export const submit = styled.button`
+    background-color: #12b886;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: #13d99d;
+    }
+`
+
