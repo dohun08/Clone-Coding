@@ -25,6 +25,15 @@
       "description": "ㅇㅇㅇ",
       "date": "2024-9-28",
       "like": 0
+    },
+    {
+      "id": "f8dc",
+      "user_name": "dehgns12",
+      "title": "제목",
+      "img_file": "/img/img1.png",
+      "description": "나의 이야기",
+      "date": "2024-9-29",
+      "like": 0
     }
   ]
 }

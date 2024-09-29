@@ -7,6 +7,9 @@ import {Link} from 'react-router-dom'
 function Headers(){
     return(
         <Header>
+            <Section>
+
+            
         <Logo src={logoSrc} alt={"logo"}/>
         <Info>
           <Alarm href={"https://velog.io/notifications"}>
@@ -27,26 +30,35 @@ function Headers(){
             </ProfillBox>
 
         </Info>
+        </Section>
     </Header>
     )
              
 
 }
 export default Headers;
-
-const Header = styled.header`
-    width: 100%;
-    max-width: 100%;
+const Section = styled.section`
+    width: 78%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+
+`
+const Header = styled.header`
+    width: 100%;
+    max-width: 100%;
     background-color: #F8F9FA;
 `
 const Logo = styled.img`
     width: 10%;
 `
 const Info = styled.div`
-    width: 28%;
+    width: 25%;
+    margin-right: 30px;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -80,6 +92,7 @@ const NewText = styled.div`
     justify-content: center;
     transition: 0.3s;
     font-weight: 700;
+    text-decoration-line:none;
     &:hover{
         background-color: black;
         color: white;
