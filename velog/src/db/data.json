@@ -1,19 +1,39 @@
 {
-    "user" : [
-        {
-            "user_id":1,
-            "name":"dehgns12",
-            "pw":"1234"
-        }
-    ],
-    "box":[
-        {
-            "user_name":"dehgns12",
-            "title":"hello",
-            "img_file" : "/img/img1.png", 
-            "description":"이건 나의 첫 글이야",
-            "date":"2020-01-01",
-            "like":0
-        }
-    ]
+  "user": [
+    {
+      "user_id": 1,
+      "name": "dehgns12",
+      "pw": "1234",
+      "id": "f2c6"
+    }
+  ],
+  "box": [
+    {
+      "user_name": "dehgns12",
+      "title": "hello",
+      "img_file": "/img/img1.png",
+      "description": "이건 나의 첫 글이야",
+      "date": "2020-01-01",
+      "like": 0,
+      "id": "033c"
+    },
+    {
+      "id": "e1b1",
+      "user_name": "dehgns12",
+      "title": "하잉",
+      "img_file": "/img/img1.png",
+      "description": "ㅇㅇㅇ",
+      "date": "2024-9-28",
+      "like": 0
+    },
+    {
+      "id": "f8dc",
+      "user_name": "dehgns12",
+      "title": "제목",
+      "img_file": "/img/img1.png",
+      "description": "나의 이야기",
+      "date": "2024-9-29",
+      "like": 0
+    }
+  ]
 }
