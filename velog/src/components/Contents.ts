@@ -82,6 +82,7 @@ export const Box = styled.div`
     text-align: center;
 `
 export const heart = styled.div`
+cursor: pointer;
 background-color: #F8F9FA;
 border-radius: 100px;
 display: flex;
@@ -90,6 +91,9 @@ border: 1px solid #adb5bd;
 justify-content: center;
     & > img{
         width: 30px;
+    }
+    &:hover{
+        border: 1px solid black;
     }
 `
 export const share = styled.div`
