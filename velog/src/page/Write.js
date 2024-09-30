@@ -38,13 +38,28 @@ function Write(){
             console.log("error : ", error);
         }
     }
+
+    const [tag, setTag] = useState([""]);
+    const [showTag, setShowTag] = useState([]);
+    const enterTag = (e)=>{
+        if(e.keyCode == 13){
+            setShowTag([...showTag, e.target.value]);
+            setTag("");
+        }
+        
+    }
     return(
         <S.container className="container">
             <S.GlobalStyle />
             <S.form>
                 <S.title placeholder="제목을 입력해주세요" type="text" value={title} onChange={(e)=>setTitle(e.target.value)} />
                 <S.bar></S.bar>
-                <S.tag type="text" placeholder="태그를 입력해주세요"/>
+                {showTag.length > 0 &&
+                 showTag.map((item, index) => (
+                    <p key={index}>{item}</p>  // 각 item을 p 태그로 출력
+                  ))
+                }
+                <S.tag type="text" placeholder="태그를 입력해주세요" value={tag} onChange={(e)=>setTag(e.target.value)} onKeyDown={(e)=>enterTag(e)}/>
                 <S.buttonBox>
                     <button>ddd</button>
                     <button>ddd</button>

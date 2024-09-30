@@ -20,10 +20,32 @@ function Contents (){
         getData(id)
     }, [])
     console.log(content)
+    const upHeart  = async ()=>{
+        try{
+            const response = await fetch(`http://localhost:3001/box/${id}`, {
+                method:'PUT',
+                headers:{
+                    "Content-Type":"application-json"
+                },
+                body:JSON.stringify({
+                    ...content,
+                    like:content.like+1
+                })
+            })
+            if (response.ok) {
+                const updatedData = await response.json();
+                setContent(updatedData);
+            } else {
+                console.error("데이터 업데이트 실패");
+            }
+        }catch(error){
+            console.log(error)
+        }
+    }
     return(
         <>
             <S.Box>
-                <S.heart>
+                <S.heart onClick={upHeart}>
                     <img src={heart} alt="" />
                 </S.heart>
                 {content.like}

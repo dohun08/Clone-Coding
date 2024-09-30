@@ -30,9 +30,9 @@ export const container = styled.div`
     width: 100%;
     background-color: #F8F9FA;
 `
-export const form = styled.form`
+export const form = styled.div`
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     width: 50%;
     background-color: white;
     height: 100vh;
@@ -63,8 +63,8 @@ export const buttonBox = styled.div`
 export const content = styled.textarea`
     font-size: 18px;
     border: none;
-        padding: 20px 40px;
-        outline: none;
+    padding: 20px 40px;
+    outline: none;
     height: 500px;
     &::placeholder{
         font-style: italic;
