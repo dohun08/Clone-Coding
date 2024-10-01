@@ -6,11 +6,15 @@ import share from '../assets/share.svg'
 function Contents (){
     const {id} = useParams();
     const [content , setContent] = useState([]);
+    const [tag, setTag] = useState([""]);
     const getData = async (id) => {
         try {
             const response = await fetch(`http://localhost:3001/box?id=${id}`);
             const data = await response.json();
             setContent(data[0]);
+            if (data[0]?.tag) {
+                setTag([...tag, ...data[0].tag]);
+            }
         } catch (error) {
             console.error('Error fetching data:', error); 
         }
@@ -18,8 +22,9 @@ function Contents (){
     useEffect(()=>{
         console.log(id)
         getData(id)
+        
     }, [])
-    console.log(content)
+    
     const upHeart  = async ()=>{
         try{
             const response = await fetch(`http://localhost:3001/box/${id}`, {
@@ -63,6 +68,13 @@ function Contents (){
                     
                     <S.follow>팔로우</S.follow>
                 </S.data>
+                <S.tagBox>
+                {tag.length > 0 && tag.map((item, index) => (
+                    index !== 0 && <S.tagOut key={index}>{item}</S.tagOut>
+                ))}
+
+                </S.tagBox>
+               
                 <S.img src={content.img_file}></S.img>
                 <p>{content.description}</p>
             </S.section>

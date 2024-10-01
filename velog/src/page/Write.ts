@@ -29,6 +29,8 @@ export const GlobalStyle = createGlobalStyle`
 export const container = styled.div`
     width: 100%;
     background-color: #F8F9FA;
+    display: flex;
+    flex-direction: row;
 `
 export const form = styled.div`
     display: flex;
@@ -38,6 +40,8 @@ export const form = styled.div`
     height: 100vh;
 `
 export const tag = styled.input`
+    margin-top:10px;
+    padding: 20px 0 !important;
     width: 150px;
     font-size: 16px;
 `
@@ -105,4 +109,43 @@ export const submit = styled.button`
         background-color: #13d99d;
     }
 `
-
+export const formOut = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #F8F9FA;
+    height: 100vh;
+`
+export const contentBox = styled.div`
+    padding: 60px;
+`
+export const titleOut = styled.h1`
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 40px;
+`
+export const contentOut = styled.p`
+    font-size: 18px;
+    outline: none;
+`
+export const tagOut = styled.p`
+    background-color: #F8F9FA;
+    color: #12b886;
+    width: max-content;
+    padding: 5px 15px;
+    border-radius:10px;
+    margin-top: 10px;
+`
+export const tagBox = styled.div`
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    &>*{
+        margin-right: 10px;
+    }
+`
