@@ -27,7 +27,8 @@ function Write(){
                     img_file : "/img/img1.png", 
                     description:content,
                     date:`${year}-${Month+1}-${date}`,
-                    like:0
+                    like:0,
+                    tag:showTag
                 })
             })
             if (response.ok) {
@@ -54,12 +55,15 @@ function Write(){
             <S.form>
                 <S.title placeholder="제목을 입력해주세요" type="text" value={title} onChange={(e)=>setTitle(e.target.value)} />
                 <S.bar></S.bar>
-                {showTag.length > 0 &&
-                 showTag.map((item, index) => (
-                    <p key={index}>{item}</p>  // 각 item을 p 태그로 출력
-                  ))
-                }
-                <S.tag type="text" placeholder="태그를 입력해주세요" value={tag} onChange={(e)=>setTag(e.target.value)} onKeyDown={(e)=>enterTag(e)}/>
+                <S.tagBox>
+                    {showTag.length > 0 &&
+                    showTag.map((item, index) => (
+                        <S.tagOut key={index}>{item}</S.tagOut>  // 각 item을 p 태그로 출력
+                    ))
+                    }
+                    <S.tag type="text" placeholder="태그를 입력해주세요" value={tag} onChange={(e)=>setTag(e.target.value)} onKeyDown={(e)=>enterTag(e)}/>
+                </S.tagBox>
+                
                 <S.buttonBox>
                     <button>ddd</button>
                     <button>ddd</button>
@@ -75,6 +79,12 @@ function Write(){
                 </S.footer>
                 
             </S.form>
+            <S.formOut>
+                <S.contentBox>
+                <S.titleOut>{title}</S.titleOut>
+                <S.contentOut>{content}</S.contentOut>
+                </S.contentBox>
+            </S.formOut>
         </S.container>
     )
 }

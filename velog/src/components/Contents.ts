@@ -107,3 +107,19 @@ justify-content: center;
         width: 30px;
     }
 `
+export const tagOut = styled.p`
+    background-color: #F1F1F1;
+    color: #12b886;
+    width: max-content;
+    border-radius:10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+`
+export const tagBox = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    & > *{
+        margin-right:10px;
+        margin-bottom: 10px;
+    }
+`
