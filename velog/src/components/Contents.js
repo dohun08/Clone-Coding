@@ -47,6 +47,14 @@ function Contents (){
             console.log(error)
         }
     }
+    const changeNewLine = (text) =>{
+        return text.split('\n').map((line, index) => (
+            <span key={index}>
+                {line}
+                <br />
+            </span>
+        ));
+    }
     return(
         <>
             <S.Box>
@@ -76,7 +84,7 @@ function Contents (){
                 </S.tagBox>
                
                 <S.img src={content.img_file}></S.img>
-                <p>{content.description}</p>
+                <p> {content && content.description ? changeNewLine(content.description) : "Loading..."}</p>
             </S.section>
 
         </>
