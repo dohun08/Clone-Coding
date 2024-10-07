@@ -8,6 +8,7 @@ import NewSrcG from './assets/ClockG.svg'
 import PeedG from './assets/wifiG.svg'
 import Box from './components/Box'
 import React, { useEffect, useState } from 'react';
+
 function App() {
     const [activeIndex, setActiveIndex] = useState(0);
     
@@ -85,6 +86,8 @@ function App() {
                     ))}
                 </MainSection>
                 </Main>
+                
+               
           </Container>
       </Body>
 

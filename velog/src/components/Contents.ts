@@ -52,13 +52,14 @@ export const userData = styled.div`
 `
 export const follow = styled.button`
     padding: 7px 30px;
-    border: 1px solid #12b886;
-    color: #12b886;
+    border: 1px solid ${(props)=>(props.isFollow ? "black" : "#12b886")};
+    color:${(props)=>(props.isFollow ? "black" : "#12b886")};
     background-color: white;
     cursor: pointer;
     font-size: 14px;
     font-weight: 650;
     border-radius: 30px;
+    cursor: pointer;
 `
 export const date = styled.p`
 `
