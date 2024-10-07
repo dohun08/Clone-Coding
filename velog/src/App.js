@@ -8,7 +8,7 @@ import NewSrcG from './assets/ClockG.svg'
 import PeedG from './assets/wifiG.svg'
 import Box from './components/Box'
 import React, { useEffect, useState } from 'react';
-import Login from "./page/login";
+
 function App() {
     const [activeIndex, setActiveIndex] = useState(0);
     
@@ -43,10 +43,6 @@ function App() {
 
       }, []);
       
-      const [isLogin, setIsLogin] = useState(false);
-      const onLogin = ()=>{
-        setIsLogin(!isLogin);
-      }
   return (
       <Body>
           <GlobalStyle />
@@ -90,8 +86,7 @@ function App() {
                     ))}
                 </MainSection>
                 </Main>
-                <button onClick={onLogin}>로그인하기</button>
-                {isLogin ?  <Login /> : null}
+                
                
           </Container>
       </Body>
