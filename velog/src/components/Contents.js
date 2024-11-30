@@ -47,6 +47,16 @@ function Contents (){
             console.log(error)
         }
     }
+    const changeNewLine = (text) =>{
+        return text.split('\n').map((line, index) => (
+            <span key={index}>
+                {line}
+                <br />
+            </span>
+        ));
+    }
+    const [isFollow, setIsFollow] = useState(false);
+
     return(
         <>
             <S.Box>
@@ -66,7 +76,7 @@ function Contents (){
                         <S.date>{content.date}</S.date>
                     </S.userData>
                     
-                    <S.follow>팔로우</S.follow>
+                    <S.follow isFollow={isFollow} onClick={()=>setIsFollow(!isFollow)}>{isFollow ? "팔로우" : "팔로잉"}</S.follow>
                 </S.data>
                 <S.tagBox>
                 {tag.length > 0 && tag.map((item, index) => (
@@ -76,7 +86,7 @@ function Contents (){
                 </S.tagBox>
                
                 <S.img src={content.img_file}></S.img>
-                <p>{content.description}</p>
+                <p> {content && content.description ? changeNewLine(content.description) : "Loading..."}</p>
             </S.section>
 
         </>

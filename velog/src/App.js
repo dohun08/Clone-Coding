@@ -7,7 +7,9 @@ import TrandingSrcG from './assets/trandingG.svg'
 import NewSrcG from './assets/ClockG.svg'
 import PeedG from './assets/wifiG.svg'
 import Box from './components/Box'
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+
 function App() {
     const [activeIndex, setActiveIndex] = useState(0);
     
@@ -23,9 +25,9 @@ function App() {
     const [undata, setUnData] = useState([""])
     const getData = async () => {
         try {
-          const response = await fetch('http://localhost:3001/box');
-          const json = await response.json();
-          setData(json);
+          const response = await axios('http://localhost:3001/box');
+            console.log(response.data);
+          setData(response.data);
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -85,6 +87,8 @@ function App() {
                     ))}
                 </MainSection>
                 </Main>
+                
+               
           </Container>
       </Body>
 

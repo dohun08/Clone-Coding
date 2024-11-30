@@ -118,6 +118,8 @@ export const formOut = styled.div`
 `
 export const contentBox = styled.div`
     padding: 60px;
+    height: 80vh;
+    overflow: auto;
 `
 export const titleOut = styled.h1`
     font-size: 40px;

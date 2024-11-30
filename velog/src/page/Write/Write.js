@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as S from './Write.ts'
-import LeftSvg from '../assets/leftArrow.svg'
+import LeftSvg from '../../assets/leftArrow.svg'
 function Write(){
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
@@ -8,11 +8,14 @@ function Write(){
     const year = days.getFullYear()
     const Month = days.getMonth()
     const date = days.getDate()
-    console.log(year)
+
     const checkData = ()=>{
         if(title === "") alert("제목이 비어있습니다.")
         else if(content ==="") alert("내용이 비어있습니다.")
-        else Create()
+        else{
+            Create();
+            window.location.href = "/";
+        } 
     }
     const Create = async ()=>{
         try{
@@ -49,6 +52,14 @@ function Write(){
         }
         
     }
+    const formatContentForDisplay = (text) => {
+        return text.split('\n').map((line, index) => (
+            <span key={index}>
+                {line}
+                <br />
+            </span>
+        ));
+    };
     return(
         <S.container className="container">
             <S.GlobalStyle />
@@ -72,17 +83,17 @@ function Write(){
                     <button>ddd</button>
                     <button>ddd</button>
                 </S.buttonBox>
-                <S.content placeholder="당신의 이야기를 적어보세요..." type="text" value={content} onChange={(e) =>setContent(e.target.value)} />
+                <S.content spellCheck="false" placeholder="당신의 이야기를 적어보세요..." type="text" value={content} onChange={(e) =>setContent(e.target.value)}/>
                 <S.footer>
                 <a  href="/"><S.exit><img src = {LeftSvg} />나가기</S.exit></a>
-                <a href="/"><S.submit type="button" onClick={checkData}>출간하기</S.submit></a>
+                <S.submit type="button" onClick={checkData}>출간하기</S.submit>
                 </S.footer>
                 
             </S.form>
             <S.formOut>
                 <S.contentBox>
                 <S.titleOut>{title}</S.titleOut>
-                <S.contentOut>{content}</S.contentOut>
+                <S.contentOut>{formatContentForDisplay(content)}</S.contentOut>
                 </S.contentBox>
             </S.formOut>
         </S.container>

@@ -1,67 +1,26 @@
 {
   "user": [
     {
-      "user_id": 1,
-      "name": "dehgns12",
+      "user_name": "dehgns12",
+      "profil": "/img/img1.png",
       "pw": "1234",
       "id": "f2c6"
     }
   ],
   "box": [
     {
-      "user_name": "dehgns12",
-      "title": "hello",
-      "img_file": "/img/img1.png",
-      "description": "이건 나의 첫 글이야",
-      "date": "2020-01-01",
-      "like": 5,
-      "id": "033c",
-      "tag": [
-        "첫번째태그",
-        "두번째태그",
-        "세번째태그"
-      ]
-    },
-    {
-      "id": "e1b1",
-      "user_name": "dehgns12",
-      "title": "하잉",
-      "img_file": "/img/img1.png",
-      "description": "ㅇㅇㅇ",
-      "date": "2024-9-28",
-      "like": 7,
-      "tag": [
-        "첫번째태그",
-        "두번째태그",
-        "세번째태그"
-      ]
-    },
-    {
-      "id": "f8dc",
+      "id": "6640",
       "user_name": "dehgns12",
       "title": "제목",
       "img_file": "/img/img1.png",
-      "description": "나의 이야기",
-      "date": "2024-9-29",
-      "like": 0,
+      "description": "이렇게하기\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\n\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\n\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\nㅇ\n\nㅇ\nㅇ\nㅇ\nㅇ\nㅇㅇ\n\nㅇ\nㅇ\nㅇ",
+      "date": "2024-10-16",
+      "like": 7,
       "tag": [
-        "첫번째태그",
-        "두번째태그",
-        "세번째태그"
-      ]
-    },
-    {
-      "id": "5e18",
-      "user_name": "dehgns12",
-      "title": "드디어 제대로 된 글",
-      "img_file": "/img/img1.png",
-      "description": "첫글을 만들게 되었습니당ㅇㅎㅎㅎㅎㅎㅎㅎ",
-      "date": "2024-10-1",
-      "like": 0,
-      "tag": [
-        "글",
-        "글만들기",
-        "첫글"
+        "태그1",
+        "태그2",
+        "태그3",
+        "아아아ㅏㅏ아아아아ㅏ아아아아아ㅏ"
       ]
     }
   ]

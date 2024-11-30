@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="" />
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../클론코딩/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/src/db/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/src/db/data.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../클론코딩" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,7 +50,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
       </set>
     </attachedChunks>
   </component>
@@ -57,6 +64,8 @@
       <updated>1727251069854</updated>
       <workItem from="1727251072989" duration="21000" />
       <workItem from="1727703966430" duration="15000" />
+      <workItem from="1728918022665" duration="38000" />
+      <workItem from="1729066186938" duration="13000" />
     </task>
     <servers />
   </component>
