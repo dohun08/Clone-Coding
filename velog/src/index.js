@@ -4,6 +4,7 @@ import App from './App';
 import Write from './page/Write/Write'
 import Header from './components/Header'
 import Content from './components/Contents'
+import { Search } from './page/search';
 import {BrowserRouter as Router,
     Routes,
     Route,
@@ -18,6 +19,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="/write" element={<Write />} />
           <Route path="/box/:id" element={<Content />} />
+          <Route path='/search' element={<Search />} />
         </Routes>
       </Layout>
     </Router>
@@ -29,7 +31,6 @@ function Layout({ children }) {
   
     return (
       <>
-        {/* /write 경로에서는 Header를 제외하고 나머지 페이지에서는 Header 렌더 */}
         {location.pathname !== '/write' && <Header />}
         {children}
       </>
