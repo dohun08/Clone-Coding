@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../클론코딩/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="add : tiktok 시작">
+      <change afterPath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/nav/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/nav/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../클론코딩/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../클론코딩/velog/src/db/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/velog/src/db/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/header/style.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/TikTok/src/components/header/style.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../클론코딩/TikTok/src/pages/main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../클론코딩/TikTok/src/pages/main/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../클론코딩" />
@@ -41,16 +51,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;velog&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TikTok&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/dehgns12/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
       </set>
     </attachedChunks>
   </component>
@@ -66,10 +82,34 @@
       <workItem from="1727703966430" duration="15000" />
       <workItem from="1728918022665" duration="38000" />
       <workItem from="1729066186938" duration="13000" />
+      <workItem from="1732951606058" duration="2723000" />
+      <workItem from="1733026643518" duration="4059000" />
     </task>
+    <task id="LOCAL-00001" summary="add : velog 마무리">
+      <option name="closed" value="true" />
+      <created>1732953214292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732953214292</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add : tiktok 시작">
+      <option name="closed" value="true" />
+      <created>1732955319669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732955319669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add : velog 마무리" />
+    <MESSAGE value="add : tiktok 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="add : tiktok 시작" />
   </component>
 </project>
