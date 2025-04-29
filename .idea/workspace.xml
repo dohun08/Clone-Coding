@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/framer/src/components/header/menu/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framer/src/components/header/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/framer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/assets/react.svg" beforeDir="false" />
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 헤더 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/header/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/header/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +89,24 @@
       <workItem from="1729066186938" duration="13000" />
       <workItem from="1745365869987" duration="4954000" />
       <workItem from="1745665837578" duration="9773000" />
+      <workItem from="1745936934625" duration="3485000" />
     </task>
+    <task id="LOCAL-00001" summary="fix :: 헤더 추가">
+      <option name="closed" value="true" />
+      <created>1745936962328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745936962328</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix :: 헤더 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix :: 헤더 추가" />
   </component>
 </project>

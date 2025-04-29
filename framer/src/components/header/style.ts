@@ -31,11 +31,12 @@ export const nav = styled.nav`
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        position: relative;
         & > li {
+            position: relative;
             list-style: none;
             font-size: 1rem;
             cursor: pointer;
+            padding: 10px 0;
             color: rgba(255, 255, 255, 0.44);
         }
         & > li:hover {
