@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const HeadText = styled.h1`
     font-size: 80px;
@@ -29,9 +29,40 @@ export const Section2 = styled(Section)`
 `
 export const Section3 = styled(Section2)`
     margin: 100px 0;
+    position: relative;
 `
 export const Brand = styled.img`
     width: 120%;
+`
+const show = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+export const Black = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    backdrop-filter: blur(2px) saturate(160%) brightness(180%) blur(2px);
+    animation: ${show} 0.3s ease-in-out forwards;
+    & > a{
+        color: white;
+        text-decoration-line: none;
+    }
+    & > a:hover{
+        color: #6d6d6a;
+        transition: 0.3s;
+    }
 `
 export const mainImg = styled.img`
     width: 85vw;

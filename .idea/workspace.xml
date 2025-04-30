@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 헤더 네브바 추가">
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 홈 메인 사진, 브랜드 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/components/header/menu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/menu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/components/header/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/home/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/style.ts" afterDir="false" />
     </list>
@@ -91,7 +89,8 @@
       <workItem from="1745365869987" duration="4954000" />
       <workItem from="1745665837578" duration="9773000" />
       <workItem from="1745936934625" duration="3801000" />
-      <workItem from="1746003092787" duration="7861000" />
+      <workItem from="1746003092787" duration="8021000" />
+      <workItem from="1746024383586" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="fix :: 헤더 추가">
       <option name="closed" value="true" />
@@ -109,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745941782050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix :: 홈 메인 사진, 브랜드 추가">
+      <option name="closed" value="true" />
+      <created>1746019814067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746019814068</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix :: 헤더 추가" />
     <MESSAGE value="fix :: 헤더 네브바 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix :: 헤더 네브바 추가" />
+    <MESSAGE value="fix :: 홈 메인 사진, 브랜드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix :: 홈 메인 사진, 브랜드 추가" />
   </component>
 </project>

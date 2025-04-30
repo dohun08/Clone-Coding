@@ -2,9 +2,10 @@ import Layout from "../../layout";
 import * as S from './style.ts'
 import main from '../../assets/home/main.avif'
 import Brand from '../../assets/home/brand.png'
+import {useState} from "react";
 
 function Home() {
-
+    const [hover, setHover] = useState<boolean>(false);
   return (
     <Layout>
         <S.Container>
@@ -32,8 +33,17 @@ function Home() {
             <S.Section2>
                 <S.mainImg src={main} alt={''} />
             </S.Section2>
-            <S.Section3>
-                <S.Brand src={Brand} alt={''} />
+            <S.Section3
+                onMouseEnter={()=>setHover(true)}
+                onMouseLeave={()=>setHover(false)}
+            >
+                <S.Brand
+                    src={Brand} alt={''}
+                />
+                {hover &&  <S.Black>
+                    <a href={''}>Meet our customers </a>
+                </S.Black>
+                }
 
             </S.Section3>
         </S.Container>
