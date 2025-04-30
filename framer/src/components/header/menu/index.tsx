@@ -44,11 +44,13 @@ const ImgBox = styled.div`
 const Container = styled.div`
     border-radius: 10px;
     position: absolute;
-    backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
-    background-color: rgba(53, 53, 53, 0.7);
     top: 100%;
     left: 50%;
     transform: translate(-50%, 0%);
+    background-color: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
+    -webkit-backdrop-filter: blur(20px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,6 +62,13 @@ const MenuBox = styled.div`
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &:hover > div > p{
+        color: #cdcdcd;
+    }
 `
 const TextBox = styled.div`
     display: flex;

@@ -17,8 +17,9 @@ export const Header = styled.header`
 export const fixBox = styled.div`
     position: fixed;
     left: 50%;
-    top: 5%;
-    transform: translate(-50%, -50%);
+    
+    top: 0;
+    transform: translate(-50%, 0);
 `
 export const nav = styled.nav`
     display: flex;
@@ -37,7 +38,7 @@ export const nav = styled.nav`
             font-size: 1rem;
             cursor: pointer;
             padding: 10px 0;
-            color: rgba(255, 255, 255, 0.44);
+            color: rgba(255, 255, 255, 0.7);
         }
         & > li:hover {
             transition: 0.2s;
