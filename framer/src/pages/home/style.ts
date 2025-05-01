@@ -7,6 +7,7 @@ export const HeadText = styled.h1`
 `
 export const Container = styled.div`
     width: 100%;
+    z-index: 8;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -28,9 +29,10 @@ export const Section2 = styled(Section)`
     margin-top: 0;
 `
 export const Section3 = styled(Section2)`
-    margin: 100px 0;
+    margin: 200px 0;
     position: relative;
 `
+
 export const Brand = styled.img`
     width: 120%;
 `
@@ -116,4 +118,20 @@ export const ButtonBox = styled.div`
         transition: 0.2s;
         color: rgba(255, 255, 255, 0.66);
     }
+`
+export const SlideBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    gap: 0 5%;
+    padding: 20px;
+    align-items: center;
+    -ms-overflow-style: none;  /* IE, Edge */
+    scrollbar-width: none;     /* Firefox */
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+
 `

@@ -2,10 +2,28 @@ import Layout from "../../layout";
 import * as S from './style.ts'
 import main from '../../assets/home/main.avif'
 import Brand from '../../assets/home/brand.png'
-import {useState} from "react";
+import {JSX, useState} from "react";
+import SlideBox from "../../components/home/slidebox";
+import {slide as SlideData} from "./data.tsx";
+export interface Slide {
+    id : number,
+    span: string;
+    h3: string;
+    learn: string;
+    webHead: string[];
+    video: JSX.Element;
+    webHeadLeft: string;
+    webHeadRight: string;
+}
 
 function Home() {
     const [hover, setHover] = useState<boolean>(false);
+    const slide =SlideData
+    // const [current, setCurrent] = useState(0);
+
+    // const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
+    // const prevSlide = () =>
+    //     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
   return (
     <Layout>
         <S.Container>
@@ -46,6 +64,11 @@ function Home() {
                 }
 
             </S.Section3>
+            <S.SlideBox>
+                {slide.map((item) => (
+                    <SlideBox key={item.id} id={item.id} span={item.span} h3={item.h3} learn={item.learn} webHead={item.webHead} video={item.video} webHeadLeft={item.webHeadLeft} webHeadRight={item.webHeadRight} />
+                ))}
+            </S.SlideBox>
         </S.Container>
     </Layout>
   )

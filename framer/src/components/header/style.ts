@@ -17,6 +17,7 @@ export const Header = styled.header`
 export const fixBox = styled.div`
     position: fixed;
     left: 50%;
+    z-index: 10;
     
     top: 0;
     transform: translate(-50%, 0);
