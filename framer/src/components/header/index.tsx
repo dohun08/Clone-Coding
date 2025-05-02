@@ -59,27 +59,27 @@ export default function Header() {
         <S.fixBox>
             <S.Header>
                 <img src={Logo} alt="logo" />
-                <S.nav>
-                    <ul>
-                        {nav.map((item) => (
-                            <li
-                                key={item.id}
-                                onMouseEnter={() => setActiveMenuId(item.id)}
-                                onMouseLeave={() => setActiveMenuId(null)}
-                            >
-                                <p onClick={() => handleNavigate(item.path)}>{item.name}</p>
-                                {activeMenuId === item.id && item.menu.length > 0 && (
-                                    <Menu menu={item.menu} />
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </S.nav>
                 <S.BtnBox>
                     <button>Login</button>
                     <button>Sign up</button>
                 </S.BtnBox>
             </S.Header>
+            <S.nav>
+                <ul>
+                    {nav.map((item) => (
+                        <li
+                            key={item.id}
+                            onMouseEnter={() => setActiveMenuId(item.id)}
+                            onMouseLeave={() => setActiveMenuId(null)}
+                        >
+                            <p onClick={() => handleNavigate(item.path)}>{item.name}</p>
+                            {activeMenuId === item.id && item.menu.length > 0 && (
+                                <Menu menu={item.menu} />
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </S.nav>
         </S.fixBox>
     );
 }
