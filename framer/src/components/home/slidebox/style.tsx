@@ -7,6 +7,7 @@ export const Section4 = styled(Section2)`
     padding: 30px 60px;
     gap: 4px;
     height: 88vh;
+    background-position: center 25%;
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 20px;
@@ -33,6 +34,7 @@ export const Section4 = styled(Section2)`
 `
 export const Website = styled.div`
    position: absolute;
+    background-color: black;
     top: 20%;
     left: 54%;
     transform: translate(-50%, 0);

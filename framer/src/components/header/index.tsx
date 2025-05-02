@@ -7,7 +7,8 @@ import {useState} from "react";
 export interface Menu{
     id : number,
     strong : string,
-    p : string
+    p : string,
+    img : string
 }
 interface NavBar{
     id : number,
@@ -23,30 +24,30 @@ export default function Header() {
     }
     const nav: NavBar[] = [
         {id : 0, name : 'Features', path : '/', menu : [
-                {id : 1, strong : 'Design', p : 'Create with ease '},
-                {id : 2, strong : 'Collaborate', p : 'Build together'},
-                {id : 3, strong : 'Publish', p : 'Launch your app'},
-                {id : 4, strong : 'Scale', p : 'Grow your reach'},
+                {id : 1, strong : 'Design', p : 'Create with ease ', img : '/header/1.svg'},
+                {id : 2, strong : 'Collaborate', p : 'Build together', img : '/header/2.svg'},
+                {id : 3, strong : 'Publish', p : 'Launch your app', img : '/header/3.svg'},
+                {id : 4, strong : 'Scale', p : 'Grow your reach', img : '/header/4.svg'},
             ]},
         {id : 1, name : 'Resources', path : '/', menu : [
-                {id : 1, strong : 'Academy', p : 'Learn the basics'},
-                {id : 2, strong : 'Marketplace', p : 'Templates and plugins'},
-                {id : 3, strong : 'Updates', p : 'See what\'s new'},
-                {id : 4, strong : 'Gallery', p : 'Get inspired'},
+                {id : 1, strong : 'Academy', p : 'Learn the basics', img : '/header/5.svg' },
+                {id : 2, strong : 'Marketplace', p : 'Templates and plugins', img : '/header/6.svg'},
+                {id : 3, strong : 'Updates', p : 'See what\'s new', img : '/header/7.svg'},
+                {id : 4, strong : 'Gallery', p : 'Get inspired', img : '/header/8.svg'},
 
             ]},
         {id : 2, name : 'Help', path : '/', menu : [
-                {id : 1, strong : 'Contact', p : 'Get support'},
-                {id : 2, strong : 'Experts', p : 'Hire trusted pros'},
-                {id : 3, strong : 'Articles', p : 'Browse by category'},
-                {id : 4, strong : 'Developers', p : 'API documentation'},
+                {id : 1, strong : 'Contact', p : 'Get support', img : '/header/9.svg'},
+                {id : 2, strong : 'Experts', p : 'Hire trusted pros', img : '/header/10.svg'},
+                {id : 3, strong : 'Articles', p : 'Browse by category', img : '/header/11.svg'},
+                {id : 4, strong : 'Developers', p : 'API documentation', img : '/header/12.svg'},
 
             ]},
         {id : 3, name : 'Teams', path : '/', menu : [
-                {id : 1, strong : 'Startups', p : 'Zero to one'},
-                {id : 2, strong : 'Enterprise', p : 'Operate at scale'},
-                {id : 3, strong : 'Stories', p : 'Build to publish'},
-                {id : 4, strong : 'Scales', p : 'Let\'s chat'},
+                {id : 1, strong : 'Startups', p : 'Zero to one', img : '/header/13.svg'},
+                {id : 2, strong : 'Enterprise', p : 'Operate at scale', img : '/header/14.svg'},
+                {id : 3, strong : 'Stories', p : 'Build to publish', img : '/header/15.svg'},
+                {id : 4, strong : 'Scales', p : 'Let\'s chat', img : '/header/16.svg'},
 
             ]},
         {id : 4, name : 'Pricing', path : '/pricing', menu : [

@@ -9,10 +9,11 @@ export default function Menu({menu}:
         <Container>
             {
                 menu.map(item=>{
+                    console.log(item.img)
                     return (
                         <MenuBox>
                             <ImgBox>
-                                <img src={''}/>
+                                <img src={item.img}/>
                             </ImgBox>
                             <TextBox>
                                 <strong>{item.strong}</strong>
@@ -38,8 +39,14 @@ const show = keyframes`
 const ImgBox = styled.div`
     width: 40px;
     height: 40px;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a5a5a;
     border-radius: 10px;
+    & > img{
+        width: 50%;
+    }
 `
 const Container = styled.div`
     border-radius: 10px;
@@ -47,10 +54,9 @@ const Container = styled.div`
     top: 100%;
     left: 50%;
     transform: translate(-50%, 0%);
-    background-color: rgba(30, 30, 30, 0.95);
+    background-color: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
-    -webkit-backdrop-filter: blur(20px); 
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
