@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: framer 사용 예시 부분 추가">
-      <change afterPath="$PROJECT_DIR$/framer/src/components/home/slideItem/index.tsx" afterDir="false" />
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 무한 슬라이드, Example 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/footer/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/home/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/pages/pricing/pricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/pricing/pricing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/pages/pricing/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/pricing/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1745936934625" duration="3801000" />
       <workItem from="1746003092787" duration="8021000" />
       <workItem from="1746024383586" duration="30257000" />
-      <workItem from="1746189728418" duration="20133000" />
+      <workItem from="1746189728418" duration="23794000" />
     </task>
     <task id="LOCAL-00001" summary="fix :: 헤더 추가">
       <option name="closed" value="true" />
@@ -151,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746200210985</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix :: 무한 슬라이드, Example 완료">
+      <option name="closed" value="true" />
+      <created>1746331772412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746331772413</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +174,7 @@
     <MESSAGE value="fix :: 슬라이드 섹션 퍼블리싱" />
     <MESSAGE value="fix :: 슬라이드 기능 및 유튜브 영상 삽입" />
     <MESSAGE value="fix :: framer 사용 예시 부분 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix :: framer 사용 예시 부분 추가" />
+    <MESSAGE value="fix :: 무한 슬라이드, Example 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix :: 무한 슬라이드, Example 완료" />
   </component>
 </project>

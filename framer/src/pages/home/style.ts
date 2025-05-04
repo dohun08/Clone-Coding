@@ -32,7 +32,7 @@ export const Section2 = styled(Section)`
     width: 100%;
     position: absolute;
     z-index: 3;
-    top: 8%;
+    top: 5%;
     background-image: url("https://framerusercontent.com/images/9b8Jj3qlXqfQRuXapOAZSFGlA.png?scale-down-to=4096");
     background-size: 120%;
     height: 140vh;
