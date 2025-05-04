@@ -9,6 +9,7 @@ import {slide as SlideData} from "./data.tsx";
 import SlideButtonBox from "../../components/home/slideButton/index.tsx";
 import SimpleLogo from '../../assets/home/simpleLogo.png'
 import X from '../../assets/home/x.png'
+import SlideItem from "../../components/home/slideItem/index.tsx";
 
 export interface Slide {
     id : number,
@@ -19,6 +20,12 @@ export interface Slide {
     video: JSX.Element;
     webHeadLeft: string;
     webHeadRight: string;
+}
+interface Brand{
+    id : number,
+    img : string,
+    strong : string,
+    p : string
 }
 function Home() {
     const [hover, setHover] = useState<boolean>(false);
@@ -105,6 +112,40 @@ function Home() {
         false,
         false
     ]);
+    const [isHover2, setIsHover2] = useState([
+        false,
+        false,
+        false,
+        false,
+        false,
+    ]);
+
+    const brand2 : Brand[] = [
+        {id : 0, img : '/home/brand1.png', strong : "Sheets", p : "Sync with Google"},
+        {id : 1, img : '/home/brand2.png', strong : "Humblytics", p : "Track your site"},
+        {id : 2, img : '/home/brand3.png', strong : "Lummi", p : "Beautiful assets"},
+        {id : 3, img : '/home/brand4.png', strong : "Renamer", p : "Organize your layers"},
+        {id : 4, img : '/home/brand5.png', strong : "Semflow", p : "SEO tools"},
+        {id : 5, img : '/home/brand6.png', strong : "Dither", p : "Dither effect for images"},
+        {id : 6, img : '/home/brand7.png', strong : "Notion", p : "Sync with Notion"},
+        {id : 7, img : '/home/brand8.png', strong : "Phosphor", p : "300+ icons in 3 styles"},
+        {id : 8, img : '/home/brand9.png', strong : "Airtable", p : "Sync with Airtable"},
+        {id : 9, img : '/home/brand10.png', strong : "ASCII", p : "Retro effects with text"},
+        {id : 10, img : '/home/brand11.png', strong : "Framer Commerce", p : "Beautiful Shopify stores"},
+        {id : 11, img : '/home/brand12.png', strong : "Search Console", p : "Data on your canvas"},
+    ]
+
+    const slides = [
+        {id : 0, img : "/home/infinete1.png", p1 : "Echo", p2 : "United States", color:"rgb(136, 136, 136)", text : "ECHO"},
+        {id : 1, img : "/home/infinete2.png", p1 : "Ultra", p2 : "Switzerland", color: "rgb(194, 70, 8)" , text : "UTTRA"},
+        {id : 2, img : "/home/infinete3.png", p1 : "Off/Brand", p2 : "United States", color: "rgb(71, 71, 71)", text : "Off/Menu"},
+        {id : 3, img : "/home/infinete4.png", p1 : "Analogue", p2 : "Amsterdam", color:"rgb(9, 64, 255)", text : "Analogue"},
+        {id : 4, img : "/home/infinete5.png", p1 : "Reboot", p2 : "Spain", color:"rgb(83, 12, 243)", text : "reboot"},
+        {id :5, img : "/home/infinete6.png", p1 : "Bolster", p2 : "United States", color:"rgb(255, 74, 83)", text : "Bolster"},
+        {id : 6, img : "https://framerusercontent.com/images/dfNs1Mwo9HVfHskqnBpLjsb630.jpg", p1 : "Metalab", p2 : "United States", color:"rgb(0,0,0)", text : "Matalab"},
+        {id : 7, img : "https://framerusercontent.com/images/ePNECHZsevDkx4spR03n0JVLMg.png", p1 : "Framer Studio", p2 : "Global", text : "ECHO"
+        },
+    ];
   return (
     <Layout>
         <S.Container>
@@ -199,31 +240,35 @@ function Home() {
                 </div>
                 <S.VideoSection>
                     <S.VideoBox style={{ gridColumn: '1 / 2' }}>
-                        <S.Example onMouseEnter={()=>setIsHover([true, false, false, false, false, false])} color={"#1400ff"} >
+                        <S.Example onMouseLeave={()=>setIsHover([false, false, false, false, false, false])} onMouseEnter={()=>setIsHover([true, false, false, false, false, false])} color={"#1400ff"} >
                             {isHover[0] &&<S.Dark />}
                             <video autoPlay muted width={'100%'} height={'100%'} src={'https://framerusercontent.com/assets/7pjjHThDJ0d7FSLOtDrTA4pRXEc.mp4'} />
                         </S.Example>
-                        <S.Example onMouseEnter={()=>setIsHover([false, true, false, false, false, false])} color={"#ff82ff"}>
+                        <S.Example onMouseLeave={()=>setIsHover([false, false, false, false, false, false])} onMouseEnter={()=>setIsHover([false, true, false, false, false, false])} color={"#ff82ff"}>
                             {isHover[1] && <S.Dark />}
                             <video width={'100%'} height={'100%'} muted autoPlay src={'https://framerusercontent.com/assets/qg3ySEAIvRVlkcoI94zHjE57Rk.mp4'} />
                         </S.Example>
-                        <S.Example onMouseEnter={()=>setIsHover([false, false, true, false, false, false])} color={"#00adc1"}>
+                        <S.Example onMouseLeave={()=>setIsHover([false, false, false, false, false, false])} onMouseEnter={()=>setIsHover([false, false, true, false, false, false])} color={"#00adc1"}>
                             {isHover[2] && <S.Dark />}
                             <video width={'100%'} height={'100%'} muted autoPlay src={'https://framerusercontent.com/assets/Cw4grH0hI3nRYQLiC53MUuRL0.mp4'} />
                         </S.Example>
                     </S.VideoBox>
                     <S.VideoBox style={{ gridColumn: '2 / 3' }}>
-                        <S.Example onMouseEnter={()=>setIsHover([false, false, false, true, false, false])} color={'#ff0000'}>
+                        <S.Example
+                            onMouseEnter={()=>setIsHover([false, false, false, true, false, false])}
+                            color={'#ff0000'}
+                            onMouseLeave={()=>setIsHover([false, false, false, false, false, false])}
+                        >
                             {isHover[3] && <S.Dark />}
                             <video height={'100%'} src={'https://framerusercontent.com/assets/uqb7Jrt9Ipm0RSjVjEVD8boQ5s.mp4'} autoPlay muted width={'100%'} />
                         </S.Example>
                     </S.VideoBox>
                     <S.VideoBox style={{ gridColumn: '1 / 3' }}>
-                        <S.Example onMouseEnter={()=>setIsHover([false, false, false, false, true, false])} color={"#a8fc00"}>
+                        <S.Example onMouseLeave={()=>setIsHover([false, false, false, false, false, false])} onMouseEnter={()=>setIsHover([false, false, false, false, true, false])} color={"#a8fc00"}>
                             {isHover[4] && <S.Dark />}
                             <video height={'100%'} src={'https://framerusercontent.com/assets/LzP7kaWtEH5iEWLmFk0w7mQ9oJw.mp4'} autoPlay muted width={'100%'} />
                         </S.Example>
-                        <S.Example onMouseEnter={()=>setIsHover([false, false, false, false, false, true])} color={'#ef8400'}>
+                        <S.Example onMouseLeave={()=>setIsHover([false, false, false, false, false, false])} onMouseEnter={()=>setIsHover([false, false, false, false, false, true])} color={'#ef8400'}>
                             {isHover[5] && <S.Dark />}
                             <video height={'100%'} src={'https://framerusercontent.com/assets/6lIeCq70Ms7a34UU3ZOrrZrBSQg.mp4'} autoPlay muted width={'100%'} />
                         </S.Example>
@@ -231,6 +276,107 @@ function Home() {
                 </S.VideoSection>
                 <h4>View hundreds of sites &gt;</h4>
             </S.Section6>
+            <S.Section7>
+                <div>
+                    <h2>Start with a Template,<br/> level-up with Plugins</h2>
+                </div>
+                <S.Template>
+                    <S.TemplateLeft>
+                        <S.TemplateFirst
+                            onMouseEnter={()=>setIsHover2([true, false, false, false, false])}
+                            color={"#6000ff"}
+                            onMouseLeave={()=>setIsHover2([false, false, false, false, false])}
+                        >
+                            <img src={"https://framerusercontent.com/images/WB0Fct3qem5hAqyXzPEYJWcHj8.png"} alt={"template1"} />
+                            <S.Gradation color={"rgb(96,0,255)"}>
+                                <img src={"/home/001.svg"} alt={''} />
+                                Start up
+                            </S.Gradation>
+                            {isHover2[0] &&<S.Dark />}
+                        </S.TemplateFirst>
+                    </S.TemplateLeft>
+                    <S.TemplateRight>
+                        <S.TemplateBox
+                            onMouseEnter={()=>setIsHover2([false, true, false, false, false])}
+                            onMouseLeave={()=>setIsHover2([false, false, false, false, false])}
+                            color={"#0007ff"}
+                        >
+                            <img src={"https://framerusercontent.com/images/g13FxfejBRodQeaaSaMLJskQQqg.png?scale-down-to=512"} alt={"template2"} />
+                            <S.Gradation color={"rgb(0,7,255)"}>
+                                <img src={"/home/002.svg"} alt={''} />
+                                Agency
+                            </S.Gradation>
+                            {isHover2[1] &&<S.Dark />}
+                        </S.TemplateBox>
+                        <S.TemplateBox
+                            onMouseEnter={()=>setIsHover2([false, false, true, false, false])}
+                            onMouseLeave={()=>setIsHover2([false, false, false, false, false])}
+                            color={"#ff9e00"}
+                        >
+                            <img src={"https://framerusercontent.com/images/aup14sk4YAbibJJS7qCJOi0zbXc.png"} alt={"template3"} />
+                            <S.Gradation color={"rgb(255,158,0)"}>
+                                <img src={"/home/003.svg"} alt={''} />
+                                Business
+                            </S.Gradation>
+                            {isHover2[2] &&<S.Dark />}
+                        </S.TemplateBox>
+                        <S.TemplateBox
+                            onMouseEnter={()=>setIsHover2([false, false, false, true, false])}
+                            onMouseLeave={()=>setIsHover2([false, false, false, false, false])}
+                            color={"#bcd100"}
+                        >
+                            <img src={"https://framerusercontent.com/images/UepsmxH0XjzJ1Hk5FSXOQUwKhg.png"} alt={"template4"} />
+                            <S.Gradation color={"rgb(188,209,0)"}>
+                                <img src={"/home/004.svg"} alt={''} />
+                                Portfolio
+                            </S.Gradation>
+                            {isHover2[3] &&<S.Dark />}
+                        </S.TemplateBox>
+                        <S.TemplateBox
+                            color={"#ff4205"}
+                            onMouseEnter={()=>setIsHover2([false, false, false, false, true])}
+                            onMouseLeave={()=>setIsHover2([false, false, false, false, false])}
+                        >
+                            <img src={"https://framerusercontent.com/images/OdfVIl8irDHTAEuIVKw8YbNjsHM.png"} alt={"template5"} />
+                            <S.Gradation color={"rgb(255,66,5)"}>
+                                <img src={"/home/005.svg"} alt={''} />
+                                SaaS
+                            </S.Gradation>
+                            {isHover2[4] &&<S.Dark />}
+                        </S.TemplateBox>
+                    </S.TemplateRight>
+                </S.Template>
+                <S.Brand2>
+                    {brand2.map(item=>{
+                        return(
+                            <div key={item.id}>
+                                <img src={item.img} alt={''} />
+                                <div>
+                                    <strong>{item.strong}</strong>
+                                    <p>{item.p}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </S.Brand2>
+                <h3>Browse the Marketplace &gt;</h3>
+            </S.Section7>
+            <S.Section8>
+                <div>
+                    <h2>Find a Pro</h2>
+                    <S.ButtonBox>
+                        <button>Browse experts</button>
+                        <button>Get matched</button>
+                    </S.ButtonBox>
+                </div>
+                <S.SlideContainer>
+                    <S.SlideTrack>
+                        {[...slides, ...slides].map((item, idx) => (
+                            <SlideItem key={`${item.id}-${idx}`} text={item.text} color={item.color}  img={item.img} p1={item.p1} p2={item.p2}></SlideItem>
+                        ))}
+                    </S.SlideTrack>
+                </S.SlideContainer>
+            </S.Section8>
         </S.Container>
     </Layout>
   )
