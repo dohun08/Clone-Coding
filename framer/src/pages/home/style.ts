@@ -1,9 +1,21 @@
 import styled, {keyframes} from "styled-components";
 
-export const HeadText = styled.h1`
+const move = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+export const HeadText = styled.h1<{duration: number}>`
     font-size: 80px;
     color: white;
     height: min-content;
+    animation: ${move} ${(props) => props.duration}s ease-in-out forwards;
 `
 export const Container = styled.div`
     width: 100%;
@@ -43,9 +55,6 @@ export const UnBox = styled.div`
     width: 100%;
     height: 80vh;
 `
-export const mainImg = styled.img`
-    width: 85%;
-`
 export const SubTextBox = styled.div`
     display: flex;
     width: 600px;
@@ -61,11 +70,13 @@ export const HeadBox = styled.div`
     flex-wrap: wrap;
     gap: 0 20px;
 `
-export const SubText = styled.p`
+export const SubText = styled.p<{duration: number}>`
     font-size: 24px;
     color: #8c8c8c;
+    animation: ${move} ${(props) => props.duration}s ease-in-out forwards;
 `
-export const ButtonBox = styled.div`
+export const ButtonBox = styled.div<{duration: number}>`
+    animation: ${move} ${(props) => props.duration}s ease-in-out forwards;
     display: flex;
     width: 600px;
     align-items: center;

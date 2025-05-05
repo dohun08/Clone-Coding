@@ -29,7 +29,7 @@ export default function PricingBox(){
         <>
             <S.UnBox isBlock={!shouldRender} />
             <S.PricingBox isStop={stop} isBlock={shouldRender}>
-                <S.Pricing >
+                <S.Pricing duration={0.3} >
                     <S.PricingHead>
                         <div>
                             <h2>Launch</h2>
@@ -60,7 +60,7 @@ export default function PricingBox(){
                     </S.PricingUl>
                     <S.PricingButton>Get started</S.PricingButton>
                 </S.Pricing>
-                <S.Pricing>
+                <S.Pricing  duration={0.6}>
                     <S.PricingHead>
                         <div>
                             <h2>Scale</h2>
@@ -90,7 +90,7 @@ export default function PricingBox(){
                     </S.PricingUl>
                     <S.PricingButton>Get started</S.PricingButton>
                 </S.Pricing>
-                <S.Pricing>
+                <S.Pricing  duration={0.9}>
                     <S.PricingHead>
                         <div>
                             <h2>Launch</h2>

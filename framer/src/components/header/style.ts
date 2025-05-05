@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const Header = styled.header`
     width: 100vw;
@@ -53,11 +53,22 @@ export const nav = styled.nav`
         }
     }
 `
+const move = keyframes`
+    0% {
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
 export const BtnBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    animation: ${move} 2s ease-in-out forwards;
     & > button {
         border: none;
         padding: 5px 10px;

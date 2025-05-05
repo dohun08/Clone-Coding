@@ -1,4 +1,4 @@
-import {styled} from "styled-components";
+import {keyframes, styled} from "styled-components";
 
 
 interface PricingUlProps {
@@ -31,7 +31,18 @@ export const PricingBox = styled.section<PricingUlProps>`
         background-color: rgb(102, 0, 255);
     }
 `
-export const Pricing = styled.div`
+const move = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+export const Pricing = styled.div<{duration: number}>`
     width: 40%;
     color: white;
     background-color: black;
@@ -46,6 +57,7 @@ export const Pricing = styled.div`
     border-radius: 16px;
     box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 0px 1px inset;
     gap: 20px;
+    animation: ${move} ${(props) => (props.duration)}s ease-in-out forwards;
 `
 
 export const PricingUl = styled.ul<PricingUlProps>`

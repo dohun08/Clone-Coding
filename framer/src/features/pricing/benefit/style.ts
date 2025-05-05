@@ -1,4 +1,14 @@
-import {styled} from "styled-components";
+import {keyframes, styled} from "styled-components";
+const move = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
 
 export const benefit = styled.div`
     width: 100%;
@@ -27,7 +37,8 @@ export const benefit = styled.div`
         width: 16px;
     }
 `
-export const benefitTitle = styled.div`
+export const benefitTitle = styled.div<{duration: number}>`
+    animation: ${move} ${(props) => props.duration}s ease-in-out forwards;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -37,4 +48,8 @@ export const benefitTitle = styled.div`
     & > img{
         width: 10px;
     }
+`
+export const benefitli = styled.div<{duration : number}>`
+    animation: ${move} ${(props) => props.duration}s ease-in-out forwards;
+
 `

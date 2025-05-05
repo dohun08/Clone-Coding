@@ -59,7 +59,7 @@ export default function Header() {
     return (
         <S.fixBox isModal={isModal}>
             <S.Header>
-                <img src={Logo} alt="logo" />
+                <img onClick={()=>handleNavigate('/')} src={Logo} alt="logo" />
                 <S.BtnBox>
                     <button>Login</button>
                     <button>Sign up</button>
