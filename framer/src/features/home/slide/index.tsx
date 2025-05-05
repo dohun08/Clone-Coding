@@ -25,7 +25,7 @@ export default function Slide(){
 
     useEffect(() => {
         const interval = setInterval(()=>{
-            if(index === 0){
+            if(index === 2){
                 setIsAnimation(true);
             }
             setIndex((prevIndex) => {
@@ -37,18 +37,25 @@ export default function Slide(){
 
     useEffect(() => {
         setTimeout(()=>{
-            if(index === 5) setIndex(-1);
-            if(index === -2) setIndex(4);
+            if(index === 6) setIndex(0);
+            if(index === -1) setIndex(5);
         }, 600);
+        console.log(index)
     }, [index]);
 
     const nextSlide = useThrottle(() => {
+        if(index === 4) {
+            setIsAnimation(true);
+        }
         setIndex((prevIndex) => {
             return (prevIndex + 1) % slide.length;
         });
     }, 700);
 
     const prevSlide = useThrottle(() => {
+        if(index === 1) {
+            setIsAnimation(true);
+        }
         setIndex((prevIndex) => {
             if(prevIndex === -1) return 4;
             return (prevIndex - 1) % slide.length
@@ -62,18 +69,20 @@ export default function Slide(){
             }, 100)
             return 0.5;
         }
-        return index === -1 || index === 6 ? 0 : 0.5
+        return index===0 || index===5? 0 : 0.5
     }
 
     return(
         <>
 
-            <S.SlideBox >
+            <S.SlideBox
+            >
                 <div
                     style={{
                         transition: `${animation()}s ease-in-out`,
                         display: "flex",
-                        transform: `translateX(${index === -1 ? 7.5 : -(index*100 + 92.5)}%)`,
+                        // transform : `translateX(-80vw)`,
+                        transform: `translateX(${-(index * 85)-(80+(2*index))}vw)`,
                     }}
                 >
                     {slide.map((item) => (

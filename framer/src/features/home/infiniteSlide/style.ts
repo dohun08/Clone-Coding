@@ -31,10 +31,11 @@ export const SlideContainer = styled.div`
 
 export const SlideTrack = styled.div`
   display: flex;
-  width: calc(200%);
+    gap: 10px;
+  width: 4160px;
   animation: scroll 100s linear infinite;
     @keyframes scroll {
-        0% { transform: translateX(90%); }
-        100% { transform: translateX(-5%); }
-  //  }
+        0% { transform: translateX(140px); }
+        100% { transform: translateX(-2020px); }
+    }
 `;

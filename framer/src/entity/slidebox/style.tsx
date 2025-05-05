@@ -37,6 +37,7 @@ export const Website = styled.div`
     background-color: black;
     top: 20%;
     left: 54%;
+    min-height: 85%;
     transform: translate(-50%, 0);
 `
 export const Wrap = styled.div`

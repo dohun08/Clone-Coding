@@ -27,15 +27,15 @@ export const Container = styled.div`
     position: relative;
     align-items: flex-start;
     padding: 10px;
-    width: 12.5%;
     gap: 4px;
+    width: 260px;
     justify-content: center;
     flex-direction: column;
     transition: 0.2s;
     cursor: pointer;
     flex-shrink: 0;
     & > div{
-        width: 260px;
+        width: 100%;
         height: 195px;
         overflow: hidden;
         border-radius: 10px;

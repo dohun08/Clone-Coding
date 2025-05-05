@@ -21,7 +21,7 @@ export default ({
 
         <S.SlideNav position="center">
             {slideLabels.map((label, i) => (
-                <button key={label} style={{ color: index === i ? "white" : "#8c8c8c" }}>{label}</button>
+                <button key={label} style={{ color: index === i || index === i + slideLabels.length ? "white" : "#8c8c8c" }}>{label}</button>
             ))}
         </S.SlideNav>
 

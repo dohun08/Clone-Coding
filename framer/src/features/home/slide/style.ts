@@ -5,7 +5,7 @@ export const SlideBox = styled.div`
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     min-width: 100%;
     gap: 0 5%;
     padding: 20px;
@@ -16,6 +16,7 @@ export const SlideBox = styled.div`
         display: none; /* Chrome, Safari */
     }
     & > div{
+        gap: 2vw;
         width: 1224px;
     }
 
