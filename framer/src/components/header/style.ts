@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Header = styled.header`
     width: 100vw;
     height: 100%;
-    max-width: 100%;
     backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
     background-color: rgb(0,0,0, 0.8);
     padding: 8px 9%;
@@ -14,13 +13,17 @@ export const Header = styled.header`
         width: 110px;
     }
 `
-export const fixBox = styled.div`
+interface Props {
+    isModal: boolean;
+}
+
+export const fixBox = styled.div<Props>`
+    z-index: ${(props) => (props.isModal ? 3 : 9)};
     position: fixed;
     left: 50%;
-    z-index: 10;
     top: 0;
     transform: translate(-50%, 0);
-`
+`;
 export const nav = styled.nav`
     display: flex;
     position: fixed;

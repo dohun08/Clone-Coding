@@ -15,6 +15,6 @@ export default function Layout({children}: {children: React.ReactNode}) {
 }
 
 const Container = styled.main`
-    width: 100vw;
+    width: 98vw;
     
 `

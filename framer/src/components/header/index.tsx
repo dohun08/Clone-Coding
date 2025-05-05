@@ -3,6 +3,7 @@ import Logo from '../../assets/home/logo.png'
 import {useNavigate} from "react-router-dom";
 import Menu from "./menu";
 import {useState} from "react";
+import useModal from "../../store/header.ts";
 
 export interface Menu{
     id : number,
@@ -54,9 +55,9 @@ export default function Header() {
             ]},
     ]
     const [activeMenuId, setActiveMenuId] = useState<number | null>(null);
-
+    const { isModal } = useModal() as { isModal: boolean };
     return (
-        <S.fixBox>
+        <S.fixBox isModal={isModal}>
             <S.Header>
                 <img src={Logo} alt="logo" />
                 <S.BtnBox>

@@ -1,21 +1,18 @@
 import Layout from "../../layout";
 import * as S from './style.ts'
+import PricingHead from "../../features/pricing/head";
+import Faq from "../../features/pricing/faq";
+import Benefit from "../../features/pricing/benefit";
+import PricingBox from "../../features/pricing/pricing";
 
 export default function Pricing() {
     return (
         <Layout>
             <S.Container>
-                <S.Header>
-                    <h1>Pricing</h1>
-                    <p>Use Framer for free. Upgrade to add a custom domain, access additional features, and increase limits.</p>
-                    <div>
-                        <button>Personal</button>
-                        <button>Business</button>
-                    </div>
-                </S.Header>
-                <S.PrichingBox>
-
-                </S.PrichingBox>
+                <PricingHead />
+                <PricingBox />
+                <Benefit />
+                <Faq />
             </S.Container>
         </Layout>
     )

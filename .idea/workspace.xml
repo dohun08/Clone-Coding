@@ -4,9 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 무한 슬라이드, Example 완료">
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: footer, priching 작업시작">
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/brand/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/brand/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/customer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/infiniteSlide/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/infiniteSlide/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/infiniteSlide/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/main/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/simple/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/simple/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/slide/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/slide/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/templates/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/templates/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/home/templates/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/benefit/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/benefit/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/benefit/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/faq/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/faq/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/head/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/pricing/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/features/pricing/pricing/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framer/src/store/header.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/components/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/framer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/framer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/header/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/components/header/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/home/slideButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slideButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/home/slideButton/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slideButton/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/home/slideItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slideItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/home/slidebox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slidebox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/components/home/slidebox/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slidebox/style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/pages/home/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/features/home/slide/data.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/home/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/home/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/pricing/pricing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/pricing/pricing.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framer/src/pages/pricing/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/pages/pricing/style.ts" afterDir="false" />
@@ -19,8 +53,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -66,6 +101,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/framer/src/entity" />
+      <recent name="$PROJECT_DIR$/framer/src/features/home" />
+      <recent name="$PROJECT_DIR$/framer/src/features" />
       <recent name="$PROJECT_DIR$/framer/public" />
       <recent name="$PROJECT_DIR$/framer/src/pages/home" />
     </key>
@@ -94,7 +132,11 @@
       <workItem from="1745936934625" duration="3801000" />
       <workItem from="1746003092787" duration="8021000" />
       <workItem from="1746024383586" duration="30257000" />
-      <workItem from="1746189728418" duration="23794000" />
+      <workItem from="1746189728418" duration="23910000" />
+      <workItem from="1746349379943" duration="323000" />
+      <workItem from="1746356856410" duration="8134000" />
+      <workItem from="1746371581943" duration="1261000" />
+      <workItem from="1746414100930" duration="17961000" />
     </task>
     <task id="LOCAL-00001" summary="fix :: 헤더 추가">
       <option name="closed" value="true" />
@@ -160,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746331772413</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix :: footer, priching 작업시작">
+      <option name="closed" value="true" />
+      <created>1746335775940</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746335775940</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +225,7 @@
     <MESSAGE value="fix :: 슬라이드 기능 및 유튜브 영상 삽입" />
     <MESSAGE value="fix :: framer 사용 예시 부분 추가" />
     <MESSAGE value="fix :: 무한 슬라이드, Example 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix :: 무한 슬라이드, Example 완료" />
+    <MESSAGE value="fix :: footer, priching 작업시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix :: footer, priching 작업시작" />
   </component>
 </project>

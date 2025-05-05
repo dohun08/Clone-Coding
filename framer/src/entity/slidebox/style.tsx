@@ -1,5 +1,5 @@
 import {styled} from "styled-components";
-import {Section2} from "../../../pages/home/style.ts";
+import {Section2} from "../../pages/home/style.ts";
 
 export const Section4 = styled(Section2)`
     width: 85vw;

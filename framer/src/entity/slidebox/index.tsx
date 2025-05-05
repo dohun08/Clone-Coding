@@ -1,5 +1,5 @@
 import * as S from './style.tsx'
-import type {Slide} from '../../../pages/home/home.tsx'
+import type {Slide} from '../../pages/home/home.tsx'
 export default function SlideBox({span, h3, learn, webHead, video, webHeadLeft, webHeadRight} : Slide){
     return (
         <S.Section4>
