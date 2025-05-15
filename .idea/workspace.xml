@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 에니메이션 적용">
+    <list default="true" id="99d9c0ed-54e0-473e-8071-e27bea9f278b" name="Changes" comment="fix :: 1차완성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/entity/slideButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slideButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/entity/slideItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slideItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/entity/slidebox/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/entity/slidebox/style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/features/home/infiniteSlide/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/features/home/infiniteSlide/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/features/home/slide/data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/features/home/slide/data.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/features/home/slide/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/features/home/slide/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framer/src/features/home/slide/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/framer/src/features/home/slide/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,8 @@
       <workItem from="1746371581943" duration="1261000" />
       <workItem from="1746414100930" duration="18256000" />
       <workItem from="1746444817965" duration="4487000" />
-      <workItem from="1746449364367" duration="3400000" />
+      <workItem from="1746449364367" duration="3731000" />
+      <workItem from="1746593864495" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="fix :: 헤더 추가">
       <option name="closed" value="true" />
@@ -197,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746449301799</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix :: 1차완성">
+      <option name="closed" value="true" />
+      <created>1746453025137</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746453025137</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +217,7 @@
     <MESSAGE value="fix :: footer, priching 작업시작" />
     <MESSAGE value="fix :: pricing 작업 완료 및 폴더분리" />
     <MESSAGE value="fix :: 에니메이션 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix :: 에니메이션 적용" />
+    <MESSAGE value="fix :: 1차완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix :: 1차완성" />
   </component>
 </project>
